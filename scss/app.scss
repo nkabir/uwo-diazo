@@ -57,6 +57,7 @@ body {
   background-image: url('../img/parts/bg-gradient.jpg');
   background-repeat: repeat-x;
   color: $dark-gray;
+  padding-top: 0;
   @media #{$small-only} {
     background-position: 0 12px;
   }
