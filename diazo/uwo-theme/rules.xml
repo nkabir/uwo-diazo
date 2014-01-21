@@ -9,8 +9,19 @@
 
         <theme href="index.html" />
 
-        <!-- Replace title with Plone's page title  -->
+        <!-- Head elements -->
         <replace css:theme="html head title" css:content="html head title" />
+        <after css:theme-children="html head" css:content="html head base" />
+        <after css:theme-children="html head" css:content="html head script" />
+
+        <!-- Logo -->
+        <copy attributes="href" css:theme=".wordmark-link" css:content="#portal-logo" />
+
+        <!-- Tabs -->
+        <replace css:theme-children=".navigation__site" css:content-children="#portal-globalnav" />
+
+        <!-- Personal tools -->
+        <replace css:theme="#account-info" css:content="#portal-personaltools" />
 
         <!-- Copy base tag from Plone -->
         <before css:theme-children="html head" css:content="html head base" />
@@ -25,11 +36,12 @@
         <!-- Copy script tags from Plone head to end of body -->
         <after css:theme-children="html body" css:content="html head script" />
 
-        <!-- Tabs -->
-        <replace css:theme-children=".navigation__site" css:content-children="#portal-globalnav" />
 
-        <!-- Body -->
-        <replace css:content-children="#content" css:theme-children=".content__main" />
+
+        <!-- Main columns -->
+        <replace css:content-children="#content" css:theme-children="#content" />
+        <replace css:content-children="#portal-column-one" css:theme-children="#left-column" />
+        <replace css:content-children="#portal-column-two" css:theme-children="#right-column" />
 
     </rules>
 
