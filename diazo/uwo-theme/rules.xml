@@ -23,6 +23,9 @@
         <!-- Personal tools -->
         <replace css:theme="#account-info" css:content="#portal-personaltools" />
 
+        <!-- Edit bar -->
+        <before css:theme-children="#content" css:content="#edit-bar" />
+
         <!-- Copy base tag from Plone -->
         <before css:theme-children="html head" css:content="html head base" />
 
