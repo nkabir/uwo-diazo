@@ -1,0 +1,782 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alumni Welcome</title>
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/ploneui.css" />
+  <link rel="stylesheet" href="https://plonedev.uwosh.edu/zmi43/AlumniWelcomeConfCenter/portal_css/site.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+
+  <div class="off-canvas-wrap">
+    <div class="inner-wrap">
+      <nav role="navigation" class="tab-bar hide-for-medium-up">
+        <section class="left-small">
+          <a class="left-off-canvas-toggle menu-icon">
+            <span></span>
+          </a>
+        </section>
+
+        <section class="middle tab-bar-section">
+
+        </section>
+
+        <section class="right-small">
+          <a class="right-off-canvas-toggle menu-icon">
+            <span></span>
+          </a>
+        </section>
+      </nav>
+
+      <aside class="left-off-canvas-menu hide-for-medium-up">
+        <ul class="off-canvas-list">
+          <li>
+            <label>UW Oshkosh</label>
+          </li>
+          <li>
+            <a href="http://www.uwosh.edu/beta/about-uw-oshkosh">About</a>
+          </li>
+          <li>
+            <a href="http://www.uwosh.edu/beta/academics">Academics</a>
+          </li>
+          <li>
+            <a href="http://www.titans.uwosh.edu/">Athletics</a>
+          </li>
+          <li>
+            <a href="http://www.uwosh.edu/alumni">Alumni</a>
+          </li>
+          <li>
+            <a href="http://www.uwosh.edu/admissions">Admissions</a>
+          </li>
+          <li>
+            <a href="http://www.uwosh.edu/beta/administration">Administration</a>
+          </li>
+          <li>
+            <a href="http://www.uwosh.edu/beta/resources">Resources</a>
+          </li>
+          <li>
+            <a href="http://www.uwosh.edu/beta/calendars">Calendars</a>
+          </li>
+          <li class="has-dropdown">
+            <a href="http://www.uwosh.edu/beta/titan-services">Titan Services</a>
+            <ul class="dropdown text-left">
+              <li>
+                <a href="http://www.uwosh.edu/home/site-index/">Site Index</a>
+              </li>
+              <li>
+                <a href="http://www.uwosh.edu/directory">Directory</a>
+              </li>
+              <li>
+                <a href="http://www.uwosh.edu/registrar/titanweb/">Titan Web</a>
+              </li>
+              <li>
+                <a href="http://www.uwosh.edu/titanapps">Titan Apps</a>
+              </li>
+              <li>
+                <a href="http://titanadmin.uwosh.edu/">Titan Admin</a>
+              </li>
+              <li>
+                <a href="https://my.wisconsin.edu/">My UW System</a>
+              </li>
+              <li>
+                <a href="http://www.uwosh.edu/d2l/">Desire2Learn (D2L)</a>
+              </li>
+              <li>
+                <a href="http://www.uwosh.edu/library/">Polk Library</a>
+              </li>
+              <li>
+                <a href="http://www.uwosh.edu/myuwo/">MyUWO</a>
+              </li>
+              <li>
+                <a href="https://uwosh.collegiatelink.net/">Student Clubs &amp; Orgs</a>
+              </li>
+              <li>
+                <a href="https://www.myinterfase.com/uwosh/student/">Titan Jobs</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <label>Quicklinks</label>
+          </li>
+          <li>
+            <a href="https://www.gmail.com" target="_blank">Email</a>
+          </li>
+          <li>
+            <a href="http://www.uwosh.edu/library">Polk Library</a>
+          </li>
+          <li>
+            <a href="http://www.uwosh.edu/directory">Directory</a>
+          </li>
+          <li>
+            <a href="http://www.uwosh.edu/d2l/">D2L</a>
+          </li>
+          <li>
+            <a href="https://my.wisconsin.edu/">My UW System</a>
+          </li>
+          <!--<form>
+          <div class="row collapse">
+            <div class="large-20 columns">
+              <input type="text" placeholder="Search UW Oshkosh">
+            </div>
+            <div class="large-4 columns">
+              <a href="#" class="button postfix radius"><i class="fa fa-lg fa-search"></i></a>
+            </div>
+          </div>
+        </form>-->
+        </ul>
+      </aside>
+
+      <aside class="right-off-canvas-menu hide-for-medium-up">
+        <ul class="off-canvas-list navigation__site">
+        </ul>
+      </aside>
+
+      <section class="main-section">
+
+
+        <div class="show-for-medium-up">
+          <nav class="top-bar" role="navigation" data-topbar>
+            <ul class="title-area">
+              <li class="name"></li>
+            </ul>
+
+            <section class="top-bar-section">
+              <ul class="left">
+                <li>
+                  <a href="http://www.uwosh.edu/beta/about-uw-oshkosh" id="aboutToggle">About</a>
+                </li>
+                <li>
+                  <a href="http://www.uwosh.edu/beta/academics" id="academicsToggle">Academics</a>
+                </li>
+                <li>
+                  <a href="http://www.titans.uwosh.edu/" id="athleticsToggle">Athletics</a>
+                </li>
+                <li>
+                  <a href="http://www.uwosh.edu/alumni" id="alumniToggle">Alumni</a>
+                </li>
+                <li>
+                  <a href="http://www.uwosh.edu/admissions" id="admissionsToggle">Admissions</a>
+                </li>
+                <li>
+                  <a href="http://www.uwosh.edu/beta/administration" id="administrationToggle">Administration</a>
+                </li>
+                <li>
+                  <a href="http://www.uwosh.edu/beta/resources" id="resourcesToggle">Resources</a>
+                </li>
+                <li>
+                  <a href="http://www.uwosh.edu/beta/calendars" id="calendarsToggle">Calendars</a>
+                </li>
+                <li class="has-dropdown">
+                  <a href="http://www.uwosh.edu/beta/titan-services" id="titanServicesToggle">Titan Services</a>
+                  <ul class="dropdown text-left">
+                    <li>
+                      <a href="http://www.uwosh.edu/home/site-index/">Site Index</a>
+                    </li>
+                    <li>
+                      <a href="http://www.uwosh.edu/directory">Directory</a>
+                    </li>
+                    <li>
+                      <a href="http://www.uwosh.edu/registrar/titanweb/">Titan Web</a>
+                    </li>
+                    <li>
+                      <a href="http://www.uwosh.edu/titanapps/">Titan Apps</a>
+                    </li>
+                    <li>
+                      <a href="http://titanadmin.uwosh.edu/">Titan Admin</a>
+                    </li>
+                    <li>
+                      <a href="https://my.wisconsin.edu/">My UW System</a>
+                    </li>
+                    <li>
+                      <a href="http://www.uwosh.edu/d2l/">Desire2Learn (D2L)</a>
+                    </li>
+                    <li>
+                      <a href="http://www.uwosh.edu/library/">Polk Library</a>
+                    </li>
+                    <li>
+                      <a href="http://www.uwosh.edu/myuwo/">MyUWO</a>
+                    </li>
+                    <li>
+                      <a href="https://uwosh.collegiatelink.net/">Student Clubs & Orgs</a>
+                    </li>
+                    <li>
+                      <a href="https://www.myinterfase.com/uwosh/student/">Titan Jobs</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+            <!-- /.top-bar-section -->
+          </nav>
+          <!-- /.navbar -->
+        </div>
+
+
+        <div id="aboutDrawer" class="nav-info">
+          <div class="content">
+            <div class="row drawer__row">
+              <div class="medium-5 columns">
+                <ul class="no-bullet">
+                  <li>
+                    <a href="http://www.uwosh.edu/beta/about-uw-oshkosh">Meet UW Oshkosh</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/beta/about-uw-oshkosh/welcome-from-the-chancellor.html">Welcome from Chancellor Wells</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/beta/about-uw-oshkosh/fast-facts.html">Fast Facts</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/beta/administration">Leadership</li>
+                  <li>
+                    <a href="http://www.uwosh.edu/beta/about-uw-oshkosh/mission-vision-and-core-values.html">Mission, Vision and Values</li>
+                  <li>
+                    <a href="http://www.uwosh.edu/fapa">Arts and Culture</li>
+                  <li>
+                    <a href="http://www.uwosh.edu/hr/employment">Employment</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/beta/about-uw-oshkosh/contact-uw-oshkosh.html">Contact Information</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="medium-8 columns">
+                <p>Since 1871, the University of Wisconsin Oshkosh has been providing residents of northeastern Wisconsin with high-quality, affordable education through 60 undergraduate majors, 30 master&rsquo;s degree programs and one doctoral degree for our more than 13,500 students.</p>
+              </div>
+
+              <div class="medium-11 columns">
+                <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="https://forecast.io/embed/#lat=44.0264&lon=-88.5513&name=UW Oshkosh&color=#444444"> </iframe>
+                <!--<img src="img/nav-drawers/drawer-about-photo.jpg" alt="Reeve Union">-->
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div id="academicsDrawer" class="nav-info">
+          <div class="content">
+            <div class="row drawer__row">
+              <div class="medium-7 columns">
+                <ul class="no-bullet">
+                  <li>
+                    <a href="http://www.uwosh.edu/beta/academics/majors-minors-emphases.html">Majors and Minors</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/cob">College of Business</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/coehs">College of Education &amp; Human Services</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/cols">College of Letters &amp; Science</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/con">College of Nursing</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/gradstudies">Graduate Programs</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/beta/academics/learning-assistance-services.html">Academic Support Resources</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/llce">Lifelong Learning and Community Engagement</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/summer">Summer Session</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="medium-9 columns">
+                <p>With nationally-accredited programs, award-winning faculty and quality support services, UW Oshkosh provides students with opportunities for on-campus and online learning, faculty-student collaboration and personal and professional growth with degrees in our four colleges.</p>
+              </div>
+              <div class="medium-8 columns">
+                <img src="img/nav-drawers/drawer-academics-photo.jpg" alt="Students engaged in hands-on learning.">
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div id="athleticsDrawer" class="nav-info">
+          <div class="content">
+            <div class="row drawer__row">
+              <div class="medium-7 columns">
+                <ul class="no-bullet">
+                  <li>
+                    <a href="http://www.uwoshkoshtitans.com/">Division III Sports</a>
+                  </li>
+                  <li>
+                    <a href="http://recreation.uwosh.edu/sport-clubs">Club Sports</a>
+                  </li>
+                  <li>
+                    <a href="http://recreation.uwosh.edu/intramural-sports">Intramural Sports</a>
+                  </li>
+                  <li>
+                    <a href="http://recreation.uwosh.edu/">Student Recreation &amp; Wellness Center</a>
+                  </li>
+                  <li>
+                    <a href="#">Community</a>
+                  </li>
+                  <li>
+                    <a href="#">Videos</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="medium-9 columns">
+                <p>UW Oshkosh produces well-rounded student-athletes in 21 intercollegiate sports and provides opportunities for students to participate in intramural and club sports, as well as maintaining a state-of-the-art workout facility.</p>
+              </div>
+              <div class="medium-8 columns">
+                <img src="img/nav-drawers/drawer-athletics-photo.jpg" alt="Clash, cheerleaders and students supporting UW Oshkosh athletics.">
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div id="alumniDrawer" class="nav-info">
+          <div class="content">
+            <div class="row drawer__row">
+              <div class="medium-7 columns">
+                <ul class="no-bullet">
+                  <li>
+                    <a href="http://www.uwosh.edu/alumni">Alumni Relations Office</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/alumni/documents/forms/alumni-update-form">Share Your News</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/alumni/get-involved">Get Involved</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/engage-online/">Engage Magazine</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/alumni/events">Upcoming Events</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/homecoming">Homecoming</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/usp/alumni-mentors/alumni-mentors">USP Alumni Mentors</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/foundation">Give to UWO</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="medium-9 columns">
+                <p>As University of Wisconsin Oshkosh alumni, you are part of our large and growing network. More than 83,000 people throughout the U.S. call UW Oshkosh their alma mater! Stay involved and watch the value of your degree continue to grow.</p>
+              </div>
+              <div class="medium-8 columns">
+                <img src="img/nav-drawers/drawer-alumni-photo.jpg" alt="Alumni">
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div id="admissionsDrawer" class="nav-info">
+          <div class="content">
+            <div class="row drawer__row">
+              <div class="medium-7 columns">
+                <ul class="no-bullet">
+                  <li>
+                    <a href="http://www.uwosh.edu/admissions">Undergraduate Admissions</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/gradstudies">Graduate Studies</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/llce/cnl">Accelerated Adult Programs</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/llce/ansr">Adult Student Support</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/fin_aid/">Financial Aid</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/admissions/guidelines/transfer">Transfer Admissions</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/precollege">Pre-College Programs</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/oie/iss/future-students">International Admissions</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="medium-9 columns">
+                <p>Achieve your goals with a UW Oshkosh degree. Here, your passions can be explored through student organizations, internships, graduate assistantships and student-faculty collaborations. UW Oshkosh has resources for traditional and nontraditional students, graduate and international students.</p>
+              </div>
+              <div class="medium-8 columns">
+                <img src="img/nav-drawers/drawer-admissions-photo.jpg" alt="Sage Hall">
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div id="administrationDrawer" class="nav-info">
+          <div class="content">
+            <div class="row drawer__row">
+              <div class="medium-8 columns">
+                <img src="img/nav-drawers/drawer-administration-photo.jpg" alt="Opening Day remarks from Chancellor Wells.">
+              </div>
+              <div class="medium-9 columns">
+                <p>Led by the dedicated and accomplished Chancellor Richard H. Wells, the University of Wisconsin Oshkosh’s administration continues to provide a high-quality, affordable and comprehensive education to our students and community.</p>
+              </div>
+              <div class="medium-7 columns">
+                <ul class="no-bullet">
+                  <li>
+                    <a href="http://www.uwosh.edu/admin_serv">Administrative Services</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/foundation">Advancement Division</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/provost">Academic Affairs/Provost's Office</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/stuaff/">Student Affairs</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/it">Information Technology</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/imc">Integrated Marketing and Communications</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/alumni">Alumni Relations</a>
+                  </li>
+                </ul>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div id="resourcesDrawer" class="nav-info">
+          <div class="content">
+            <div class="row drawer__row">
+              <div class="medium-8 columns">
+                <img src="img/nav-drawers/drawer-resources-photo.jpg" alt="Students working in computer lab.">
+              </div>
+              <div class="medium-9 columns">
+                <p>UW Oshkosh&rsquo;s sustainable campus provides a safe place for a diverse community of students, faculty, staff, parents and visitors through our quality academic, technology, employment, financial and campus resources.</p>
+              </div>
+              <div class="medium-7 columns">
+                <ul class="no-bullet">
+                  <li>
+                    <a href="http://www.uwosh.edu/library/">Polk Library</a>
+                  </li>
+                  <li>
+                    <a href="http://bookstore.uwosh.edu/">University Books &amp; More</li>
+                  <li>
+                    <a href="http://reeve.uwosh.edu/involvement/clubs-organizations">Student Organizations</li>
+                  <li>
+                    <a href="http://www.uwosh.edu/myuwo">MyUWO</li>
+                  <li>
+                    <a href="https://titanfiles.uwosh.edu/xythoswfs/webview/xythoslogin.action">TitanFiles</li>
+                  <li>
+                    <a href="http://www.uwosh.edu/home/titanalert">TitanAlert</a>
+                  </li>
+                </ul>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div id="calendarsDrawer" class="nav-info">
+          <div class="content">
+            <div class="row drawer__row">
+              <div class="medium-8 columns">
+                <img src="img/nav-drawers/drawer-calendars-photo.jpg" alt="Students at an event.">
+              </div>
+              <div class="medium-9 columns">
+                <p>The community is invited to attend events hosted by our students, faculty and staff on the UW Oshkosh campus. View the public events calendar, as well as important deadlines and academic schedules.</p>
+              </div>
+              <div class="medium-7 columns">
+                <ul class="no-bullet">
+                  <li>
+                    <a href="http://www.uwosh.edu/today/events/">Campus Events</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/provost/Main%20Highlight/calendars/academic-calendars">Academic Calendar</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/registrar/registration-calendar">Add/Drop Dates</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwoshkoshtitans.com/landing/index#tab_athletics_calendar">Athletic Events</a>
+                  </li>
+                  <li>
+                    <a href="http://uwoorgs.orgsync.com/Calendar">Student Organizations Calendar</a>
+                  </li>
+                </ul>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="audience-row">
+            <div class="row">
+              <div class="large-4 medium-4 small-24 small-centered medium-uncentered columns wordmark-wrapper">
+                <a href="http://www.uwosh.edu/beta" class="wordmark-link">
+                  <img src="img/parts/wordmark.png" class="wordmark" alt="University of Wisconsin Oshkosh wordmark. Links to home page." />
+                </a>
+              </div>
+              <div class="large-12 medium-19 medium-offset-1 large-offset-0 columns show-for-medium-up">
+                <img src="img/parts/alumni-welcome-and-conference-center.png" alt="Alumni Welcome and Conference Center">
+              </div>
+              <div class="large-8 medium-19 medium-offset-1 large-offset-0 columns uwo-search show-for-medium-up">
+                <ul class="inline-list">
+                  <li>
+                    <a href="https://www.gmail.com" target="_blank">Email</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/library">Polk Library</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/directory">Directory</a>
+                  </li>
+                  <li>
+                    <a href="http://www.uwosh.edu/d2l/">D2L</a>
+                  </li>
+                  <li>
+                    <a href="https://my.wisconsin.edu/">My UW System</a>
+                  </li>
+                </ul>
+                <!--{% include search.html %}-->
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.audience-row -->
+
+        </div>
+        <br>
+        <!-- /.container -->
+
+        <!-- Content -->
+        <div class="row body-container">
+          <div class="small-24 columns text-center">
+            <div class="site-nav">
+              <ul class="inline-list navigation__site">
+                <li><a href="#">About</a>
+                </li>
+                <li><a href="#">Rooms to Rent</a>
+                </li>
+                <li><a href="#">Catering</a>
+                </li>
+                <li><a href="#">Additional Services</a>
+                </li>
+                <li><a href="#">Lodging</a>
+                </li>
+                <li><a href="#">Parking and Directions</a>
+                </li>
+                <li><a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img src="img/parts/gather.png" alt="Gather" id="gather">
+          <img src="img/parts/celebrate.png" alt="Celebrate" id="celebrate">
+          <img src="img/parts/connect.png" alt="Connect" id="connect">
+
+
+          <div id="content" class="large-14 large-offset-2 columns content--internal">
+
+          </div>
+
+          <div id="right-column" class="large-6 columns">
+
+          </div>
+
+          <div class="footer__contact-info__wrap text-center">
+            <div class="footer__contact-info">
+              <span>UW&nbsp;Oshkosh Alumni Welcome and Conference Center</span>
+              <br>
+              <span>
+                <strong>Address:</strong>625 Pearl Ave. &middot; Oshkosh, WI 54901</span>
+              <span>
+                <strong>Phone:</strong>(920) 424-3301</span>
+              <span>
+                <strong>Email:</strong>awcc@uwosh.edu</span>
+              <span>
+                <strong>Connect with us:</strong>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="tagline text-center">
+          <span>The University of Wisconsin Oshkosh &mdash; Where Excellence and Opportunity Meet.</span>
+        </div>
+        <div class="footer-container">
+          <div class="container">
+            <footer class="row" role="contentinfo">
+
+              <div class="medium-8 large-8 columns">
+                <div class="row">
+                  <div class="small-8 medium-8 large-8 columns">
+                    <a href="http://www.uwosh.edu/go/directions" target="_blank">
+                      <img src="img/parts/wismap-color.png" class="wismap left desaturate" alt="Map of Wisconsin" />
+                    </a>
+                  </div>
+                  <div class="small-16 medium-16 large-16 columns">
+                    <span class="copyright">&copy;2013 UW Board of Regents</span>
+                    <address class="vcard">
+                      <div class="fn">University of Wisconsin Oshkosh</div>
+                      <div class="adr">
+                        <div class="street-address">800 Algoma Blvd.</div>
+                        <span class="locality">Oshkosh</span>,
+                        <span class="region">WI</span>
+                        <span class="postal-code">54901</span>
+                      </div>
+                      <div class="tel">
+                        <a href="tel:9204241234">(920) 424-1234</a>
+                      </div>
+                    </address>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="medium-8 large-8 columns">
+                <div class="row">
+                  <div class="medium-11 large-11 columns">
+                    <ul class="no-bullet">
+                      <li>
+                        <a href="http://www.uwosh.edu/home/accessibility-info">Accessibility</a>
+                      </li>
+                      <li>
+                        <a href="http://www.uwosh.edu/career/">Career Services</a>
+                      </li>
+                      <li>
+                        <a href="http://uwosh.edu/go/directions" target="_blank">Get Directions</a>
+                      </li>
+                      <li>
+                        <a href="http://www.uwosh.edu/foundation/support-uw-oshkosh">Give to UW Oshkosh</a>
+                      </li>
+                      <li>
+                        <a href="http://www.uwosh.edu/imc/media-relations">Media Relations</a>
+                      </li>
+                      <li>
+                        <a href="http://www.uwosh.edu/hr/why-work-at-uwo">Work at UW Oshkosh</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="medium-13 large-13 columns">
+                    <ul class="no-bullet">
+                      <li class="app-icon--footer">
+                        <a href="http://www.uwosh.edu/imc/web-new-media/mobile">
+                          <img src="img/parts/mobileapp-color.png" class="app-icon left desaturate" alt="UW Oshkosh mobile app icon">Download UW&nbsp;Oshkosh's Mobile App
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://emergency.uwosh.edu/">
+                          <img src="img/parts/emergency-color.png" class="app-icon left desaturate" alt="Emergency and Safety Information icon">Emergency and Safety&nbsp;Information
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="medium-8 large-8 columns">
+                <div class="row social-row">
+                  <ul class="small-block-grid-7">
+                    <li>
+                      <a href="{{site.facebook}}" target="_blank">
+                        <img src="img/icons/icon-facebook.png" class="social-icon desaturate" alt="Facebook logo" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{{site.twitter}}" target="_blank">
+                        <img src="img/icons/icon-twitter.png" class="social-icon desaturate" alt="Twitter logo" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{{site.instagram}}" target="_blank">
+                        <img src="img/icons/icon-instagram.png" class="social-icon desaturate" alt="Instagram logo" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{{site.youtube}}" target="_blank">
+                        <img src="img/icons/icon-youtube.png" class="social-icon desaturate" alt="YouTube logo" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{{site.linkedin}}" target="_blank">
+                        <img src="img/icons/icon-linkedin.png" class="social-icon desaturate" alt="LinkedIn logo" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{{site.pinterest}}" target="_blank">
+                        <img src="img/icons/icon-pinterest.png" class="social-icon desaturate" alt="Pinterest logo" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{{site.flickr}}" target="_blank">
+                        <img src="img/icons/icon-flickr.png" class="social-icon desaturate" alt="Flickr logo" />
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="row">
+                    <div class="small-9 columns">
+                      <a href="http://www.collegeportraits.org/WI/UW-Oshkosh" target="_blank">
+                        <img class="college-portrait-logo" src="img/parts/college-portrait.png" alt="College Portrait logo" />
+                      </a>
+                    </div>
+                    <div class="small-7 columns">
+                      <a href="http://www.ncahlc.org/?option=com_directory&Action=ShowBasic&instid=2030" target="_blank">
+                        <img src="img/parts/hlc.png" alt="Higher Learning Commission logo" />
+                      </a>
+                    </div>
+                    <div class="small-8 columns">
+                      <a href="http://www.wisconsin.edu/" target="_blank">
+                        <img src="img/parts/uw-system.png" class="footer__icon--uw-system" alt="University of Wisconsin System logo" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+            </footer>
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.footer-container -->
+
+      </section>
+      <!-- End off-canvas stuff -->
+
+      <a class="exit-off-canvas hide-for-large-up"></a>
+      </section>
+      <!-- End off-canvas stuff -->
+
+      </div>
+      <!-- End off-canvas stuff -->
+    </div>
+    <!-- End off-canvas stuff -->
+
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.hoverIntent.js"></script>
+    <script src="js/showHide.js"></script>
+</body>
+
+</html>
