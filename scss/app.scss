@@ -95,6 +95,11 @@ body {
   font-size: 1.2vw;
 }
 
+.school-title {
+  position: absolute;
+  text-indent: -9999px;
+  z-index: -9;
+}
 .wordmark {
   margin-left: -15px;
   margin-top: 5px;
@@ -135,6 +140,23 @@ body {
 .uwo-search > ul > li > a {
   font-size: 12px;
 }
+
+/******************************************************************
+OFF CANVAS NAVIGATION
+******************************************************************/
+.off-canvas__label {
+  padding: 0.3rem 1.15385rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #444;
+  border-top: 1px solid lighten(#444, 10%);
+  border-bottom: none;
+  margin: 0;
+}
+/******************************************************************
+END OFF CANVAS NAVIGATION
+******************************************************************/
 
 /******************************************************************
 NAV DRAWERS
