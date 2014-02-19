@@ -6,15 +6,8 @@
 
     <!-- Apply the following rules to standard Plone pages -->
     <notheme css:if-content=".userrole-authenticated" />
-    <notheme css:if-content=".flexbox" />
 
-    <rules css:if-content=".section-welcome">
-        <theme href="index.html" />
-    </rules>
-
-    <rules css:if-not-content=".section-welcome">
-        <theme href="internal.html" />
-    </rules>
+    <theme href="index.html" />
 
     <!-- Head elements -->
     <replace css:theme="html head title" css:content="html head title" />
