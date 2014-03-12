@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+  xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <!-- Apply the following rules to standard Plone pages -->
+  <rules css:if-content="#visual-portal-wrapper">
+
+    <!--<notheme css:if-content=".userrole-authenticated" />-->
+    <theme href="index.html" />
+
+    <!-- Replace title with Plone's page title  -->
+    <replace css:theme="html head title" css:content="html head title" />
+
+    <!-- Copy base tag from Plone -->
+    <after css:theme-children="html head" css:content="html head base" />
+
+    <!-- Copy link, style, meta tags from Plone head -->
+    <before css:theme-children="html head" content="/html/head/link | /html/head/style | /html/head/meta | /html/head/script" />
+
+    <!-- merge classes from Plone body with theme body -->
+    <merge attributes="class" css:theme="body" css:content="body" />
+
+    <!-- Copy script tags from Plone head to end of body -->
+    <!--<after css:theme-children="html body" css:content="html head script" />-->
+
+    <!-- Insert your own rules here -->
+    <replace css:theme-children="#portal-top" css:content-children="#portal-top" />
+    <!--<replace css:theme-children="#portal-columns" css:content-children="#portal-columns" />-->
+    <replace css:theme-children="#portal-footer-wrapper" css:content-children="#portal-footer-wrapper" />
+
+    <!-- Page Layout Conditionals -->
+    <rules css:if-content="#portal-column-content">
+
+      <replace css:theme-children=".portal-column-content-full" css:content-children="#portal-column-content" />
+
+      <rules css:if-content="#portal-column-one">
+        <replace css:theme-children=".portal-column-one-only" css:content-children="#portal-column-one" />
+        <drop css:theme=".portal-column-content-full"/>
+        <replace css:theme-children=".portal-column-content-one-only" css:content-children="#portal-column-content" />
+
+        <rules css:if-content="#portal-column-two">
+          <drop css:theme=".portal-column-one-only"/>
+          <drop css:theme=".portal-column-content-one-only"/>
+          <replace css:theme-children=".portal-column-one-two" css:content-children="#portal-column-one" />
+          <replace css:theme-children=".portal-column-content-one-two" css:content-children="#portal-column-content" />
+          <replace css:theme-children=".portal-column-two-one" css:content-children="#portal-column-two" />
+        </rules>
+      </rules>
+
+      <rules css:if-content="#portal-column-two">
+        <replace css:theme-children=".portal-column-two-only" css:content-children="#portal-column-two" />
+        <drop css:theme=".portal-column-content-full"/>
+        <replace css:theme-children=".portal-column-content-two-only" css:content-children="#portal-column-content" />
+
+        <rules css:if-content="#portal-column-one">
+          <drop css:theme=".portal-column-two-only"/>
+          <drop css:theme=".portal-column-content-two-only"/>
+          <replace css:theme-children=".portal-column-two-one" css:content-children="#portal-column-two" />
+          <replace css:theme-children=".portal-column-content-one-two" css:content-children="#portal-column-content" />
+          <replace css:theme-children=".portal-column-one-two" css:content-children="#portal-column-one" />
+        </rules>
+      </rules>
+
+    </rules>
+
+  </rules>
+
+</rules>
