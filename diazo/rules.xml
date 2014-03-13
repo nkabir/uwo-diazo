@@ -38,6 +38,11 @@
       <rules css:if-content="#portal-column-one">
         <replace css:theme-children=".portal-column-one-only" css:content-children="#portal-column-one" />
         <drop css:theme=".portal-column-content-full"/>
+        <drop css:theme=".portal-column-content-two-only" css:if-not-content="#portal-column-two"/>
+        <drop css:theme=".portal-column-content-one-two" css:if-not-content="#portal-column-two"/>
+        <drop css:theme=".portal-column-one-two" css:if-not-content="#portal-column-two"/>
+        <drop css:theme=".portal-column-two-only" css:if-not-content="#portal-column-two"/>
+        <drop css:theme=".portal-column-two-one" css:if-not-content="#portal-column-two"/>
         <replace css:theme-children=".portal-column-content-one-only" css:content-children="#portal-column-content" />
 
         <rules css:if-content="#portal-column-two">
@@ -52,6 +57,11 @@
       <rules css:if-content="#portal-column-two">
         <replace css:theme-children=".portal-column-two-only" css:content-children="#portal-column-two" />
         <drop css:theme=".portal-column-content-full"/>
+        <drop css:theme=".portal-column-content-one-only" css:if-not-content="#portal-column-one"/>
+        <drop css:theme=".portal-column-content-one-two" css:if-not-content="#portal-column-one"/>
+        <drop css:theme=".portal-column-one-two" css:if-not-content="#portal-column-one"/>
+        <drop css:theme=".portal-column-one-only" css:if-not-content="#portal-column-one"/>
+        <drop css:theme=".portal-column-two-one" css:if-not-content="#portal-column-one"/>
         <replace css:theme-children=".portal-column-content-two-only" css:content-children="#portal-column-content" />
 
         <rules css:if-content="#portal-column-one">
