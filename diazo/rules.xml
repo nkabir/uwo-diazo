@@ -26,6 +26,7 @@
     <!--<after css:theme-children="html body" css:content="html head script" />-->
 
     <!-- Insert your own rules here -->
+    <replace css:theme-children=".navbar-nav" css:content-children="#topNav" />
     <replace css:theme-children="#portal-top" css:content-children="#portal-top" />
     <!--<replace css:theme-children="#portal-columns" css:content-children="#portal-columns" />-->
     <replace css:theme-children="#portal-footer-wrapper" css:content-children="#portal-footer-wrapper" />

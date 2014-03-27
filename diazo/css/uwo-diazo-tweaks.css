@@ -1,0 +1,27 @@
+@media (min-width: 1200px) {
+  .navbar {
+    border-radius:0
+  }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+.navbar {
+  margin-bottom: 5px;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #FFF;
+}
+ul.nav.navbar-nav {
+  font-size: 17px;
+  text-transform: uppercase;
+}
+ul li#titanServicesLink.titan_servicesNav {
+  position: relative;
+  padding-right: 0;
+  height: inherit;
+}
