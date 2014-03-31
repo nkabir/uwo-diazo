@@ -13,9 +13,6 @@
 .navbar {
   margin-bottom: 5px;
 }
-.navbar-inverse .navbar-nav>li>a {
-  color: #FFF;
-}
 ul.nav.navbar-nav {
   font-size: 17px;
   text-transform: uppercase;
