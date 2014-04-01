@@ -26,8 +26,10 @@
     </div><!-- /.container-fluid -->
   </nav>
   
-  <div id="visual-portal-wrapper" class="container">
-    <div id="portal-top" class="row"></div>
+  <div id="visual-portal-wrapper">
+    <div class="container">
+      <div id="portal-top" class="row"></div>
+    </div>
     <script type="text/javascript">
       var navHtml = jq("#top_level_navigation").html();
       jq("#top_level_navigation").remove();
@@ -35,18 +37,39 @@
       //jq("#top_level_navigation").html(navHtml);
     </script>
 
-    <div id="portal-columns" class="row">
-      <div id="portal-column-content" class="col-sm-24 col-md-18 col-md-push-6 portal-column-content-one-only"></div>
-      <div id="portal-column-content" class="col-sm-24 col-md-12 col-md-push-6 portal-column-content-one-two"></div>
-      <div id="portal-column-content" class="col-sm-24 col-md-16 portal-column-content-two-only"></div>
-      <div id="portal-column-content" class="col-sm-24 portal-column-content-full"></div>
-      <div id="portal-column-two" class="col-sm-24 col-md-8 portal-column-two-only"></div>
-      <div id="portal-column-two" class="col-sm-24 col-md-6 col-md-push-6 portal-column-two-one"></div>
-      <div id="portal-column-one" class="col-sm-24 col-md-6 col-md-pull-18 portal-column-one-only"></div>
-      <div id="portal-column-one" class="col-sm-24 col-md-6 col-md-pull-18 portal-column-one-two"></div>
+    <div class="container">
+      <div id="portal-columns" class="row">
+        <div id="portal-column-content" class="col-sm-24 col-md-18 col-md-push-6 portal-column-content-one-only"></div>
+        <div id="portal-column-content" class="col-sm-24 col-md-12 col-md-push-6 portal-column-content-one-two"></div>
+        <div id="portal-column-content" class="col-sm-24 col-md-16 portal-column-content-two-only"></div>
+        <div id="portal-column-content" class="col-sm-24 portal-column-content-full"></div>
+        <div id="portal-column-two" class="col-sm-24 col-md-8 portal-column-two-only"></div>
+        <div id="portal-column-two" class="col-sm-24 col-md-6 col-md-push-6 portal-column-two-one"></div>
+        <div id="portal-column-one" class="col-sm-24 col-md-6 col-md-pull-18 portal-column-one-only"></div>
+        <div id="portal-column-one" class="col-sm-24 col-md-6 col-md-pull-18 portal-column-one-two"></div>
+      </div>
     </div>
-    <div id="portal-footer-wrapper" class="row"></div>
-  </div>
+    
+    <div id="portlets-footer-wrapper">
+      <div class="container">
+        <div id="portlets-footer" class="row"></div>
+      </div>
+    </div>
+    <div id="portal-footer-wrapper">
+      <div class="container">
+        <div id="portal-footer" class="row"></div>
+      </div>
+    </div>
+    <div id="uwoshFooter-wrapper">
+      <div class="container">
+        <div id="uwoshFooter" class="row"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="portal-siteactions" class="row"></div>
+    </div>
+    
+  </div><!-- /#visual-portal-wrapper -->
 
   <script type='text/javascript' src='js/moment.js'></script>
   <script type='text/javascript' src='js/angular.min.js'></script>

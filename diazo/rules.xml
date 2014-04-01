@@ -29,7 +29,10 @@
     <replace css:theme-children=".navbar-nav" css:content-children="#topNav" />
     <replace css:theme-children="#portal-top" css:content-children="#portal-top" />
     <!--<replace css:theme-children="#portal-columns" css:content-children="#portal-columns" />-->
-    <replace css:theme-children="#portal-footer-wrapper" css:content-children="#portal-footer-wrapper" />
+    <replace css:theme-children="#portlets-footer" css:content-children="#portlets-footer" />
+    <replace css:theme-children="#portal-footer" css:content-children="#portal-footer" />
+    <replace css:theme-children="#uwoshFooter" css:content-children="#uwoshFooter" />
+    <replace css:theme-children="#portal-siteactions" css:content-children="#portal-siteactions" />
 
     <!-- Page Layout Conditionals -->
     <rules css:if-content="#portal-column-content">

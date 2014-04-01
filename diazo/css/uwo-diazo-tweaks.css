@@ -22,3 +22,16 @@ ul li#titanServicesLink.titan_servicesNav {
   padding-right: 0;
   height: inherit;
 }
+#portal-footer {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#portal-footer-wrapper {
+  background-color: #444;
+}
+#uwoshFooter-wrapper {
+  background-color: #b0b0b0;
+}
+#content {
+  font-size: 16px;
+}
