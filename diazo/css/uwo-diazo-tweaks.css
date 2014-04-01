@@ -35,3 +35,13 @@ ul li#titanServicesLink.titan_servicesNav {
 #content {
   font-size: 16px;
 }
+#portlets-footer div.width-full {
+  width: inherit;
+}
+#portlets-footer div.position-0 {
+  margin-left: 0;
+}
+#portlets-footer div.cell {
+  float: none;
+  left: 0;
+}
