@@ -45,3 +45,24 @@ ul li#titanServicesLink.titan_servicesNav {
   float: none;
   left: 0;
 }
+#content .row {
+  width: inherit;
+}
+
+@media screen and (max-width : 977px) { 
+  #visual-portal-wrapper {
+    width: inherit !important;
+  }
+}
+
+@media screen and (max-width : 770px) { 
+  #visual-portal-wrapper {
+    width: inherit !important;
+  }
+}
+
+@media screen and (max-width : 610px) { 
+  #visual-portal-wrapper {
+    width: inherit !important;
+  }
+}
