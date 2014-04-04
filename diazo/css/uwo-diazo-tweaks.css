@@ -66,7 +66,25 @@ ul li#titanServicesLink.titan_servicesNav {
 #content .row {
   width: inherit;
 }
-
+/********************************************
+HEADER
+********************************************/
+header {
+  margin-bottom: 16px;
+}
+#siteTitle {
+  margin-top: 60px;
+}
+.wordmark {
+  margin-left: -26px;
+}
+#quickLinksDesktop {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+/********************************************
+END HEADER
+********************************************/
 /********************************************
 FOOTER
 ********************************************/
