@@ -1,3 +1,7 @@
+#visual-portal-wrapper {
+  width: auto;
+}
+
 @media (min-width: 1200px) {
   .navbar {
     border-radius:0
@@ -49,19 +53,19 @@ ul li#titanServicesLink.titan_servicesNav {
   width: inherit;
 }
 
-@media screen and (max-width : 977px) { 
+@media screen and (max-width : 977px) {
   #visual-portal-wrapper {
     width: inherit !important;
   }
 }
 
-@media screen and (max-width : 770px) { 
+@media screen and (max-width : 770px) {
   #visual-portal-wrapper {
     width: inherit !important;
   }
 }
 
-@media screen and (max-width : 610px) { 
+@media screen and (max-width : 610px) {
   #visual-portal-wrapper {
     width: inherit !important;
   }
