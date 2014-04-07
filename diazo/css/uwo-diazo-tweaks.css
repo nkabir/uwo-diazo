@@ -155,10 +155,22 @@ END FOOTER
   #visual-portal-wrapper {
     width: inherit !important;
   }
+  #portal-column-content,
+  #portal-column-one,
+  #portal-column-two {
+    width: inherit !important;
+    margin-left: inherit !important;
+  }
 }
 
 @media screen and (max-width : 610px) {
   #visual-portal-wrapper {
     width: inherit !important;
+  }
+  #portal-column-content,
+  #portal-column-one,
+  #portal-column-two {
+    width: inherit !important;
+    margin-left: inherit !important;
   }
 }
