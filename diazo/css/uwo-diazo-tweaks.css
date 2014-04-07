@@ -89,6 +89,27 @@ header {
 /********************************************
 END HEADER
 ********************************************/
+
+/********************************************
+PORTAL-GLOBALNAV
+********************************************/
+.nav-menu .nav-primary li {
+  clear: none;
+  display: block !important;
+}
+.nav-menu .nav-primary {
+  margin-top: 0;
+  overflow: inherit;
+}
+@media screen and (max-width : 815px) {
+  .nav-menu .nav-primary li {
+    display: none !important;
+  }
+}
+/********************************************
+END PORTAL-GLOBALNAV
+********************************************/
+
 /********************************************
 FOOTER
 ********************************************/
