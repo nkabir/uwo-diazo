@@ -82,6 +82,10 @@ header {
   margin-top: 16px;
   margin-bottom: 16px;
 }
+#LSResult {
+  z-index: 99;
+  margin-top: 5px;
+}
 /********************************************
 END HEADER
 ********************************************/
