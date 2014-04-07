@@ -32,6 +32,7 @@
     <replace css:theme-children="#searchBox" css:content-children="#portal-searchbox" />
     <replace css:theme-children="#portal-personaltools-wrapper" css:content-children="#portal-personaltools-wrapper" />
     <replace css:theme-children="#portal-globalnav" css:content-children="#portal-globalnav" />
+    <replace css:theme-children="#mainImage" css:content-children="#mainImage" />
     <!--<replace css:theme-children="#portal-columns" css:content-children="#portal-columns" />-->
     <replace css:theme-children="#portlets-footer" css:content-children="#portlets-footer" />
     <replace css:theme-children="#portal-footer" css:content-children="#portal-footer" />
