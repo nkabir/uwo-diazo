@@ -15,6 +15,12 @@
 #visual-portal-wrapper {
   width: auto;
 }
+@media screen and (min-width : 1625px)  {
+  #visual-portal-wrapper {
+    width: auto !important;
+  }
+}
+
 
 @media (min-width: 1200px) {
   .navbar {
