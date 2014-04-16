@@ -81,6 +81,11 @@ header {
 #siteTitle {
   margin-top: 60px;
 }
+@media screen and (max-width : 992px) {
+  #siteTitle {
+    margin-top: 16px;
+  }
+}
 .wordmark {
   margin-left: -26px;
 }
