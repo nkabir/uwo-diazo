@@ -59,6 +59,13 @@ ul li#titanServicesLink.titan_servicesNav {
 #content {
   font-size: 16px;
 }
+#content h1,
+#content h2,
+#content h3 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: inherit;
+  font-style: normal;
+}
 #portlets-footer div.width-full {
   width: inherit;
 }
