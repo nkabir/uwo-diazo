@@ -66,13 +66,16 @@ ul li#titanServicesLink.titan_servicesNav {
   font-weight: inherit;
   font-style: normal;
 }
-#portlets-footer div.width-full {
+#portlets-footer div.width-full,
+#portlets-in-header div.width-full {
   width: inherit;
 }
-#portlets-footer div.position-0 {
+#portlets-footer div.position-0,
+#portlets-in-header div.position-0 {
   margin-left: 0;
 }
-#portlets-footer div.cell {
+#portlets-footer div.cell,
+#portlets-in-header div.cell {
   float: none;
   left: 0;
 }
@@ -92,6 +95,9 @@ header {
   #siteTitle {
     margin-top: 16px;
   }
+}
+.wordmark-wrapper {
+  text-align: center;
 }
 .wordmark {
   margin-left: -27px;
@@ -140,7 +146,7 @@ PORTAL-GLOBALNAV
   display: block !important;
 }
 .nav-menu .nav-primary {
-  margin-top: 0;
+  margin-top: 0 !important;
   overflow: inherit;
 }
 @media screen and (max-width : 1214px) {
@@ -250,6 +256,15 @@ END FOOTER
   #portal-column-two {
     width: inherit !important;
     margin-left: inherit !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #portlets-in-header .position-0 {
+    margin-left: inherit !important;
+  }
+  #portlets-in-header .width-full {
+    width: inherit !important;
   }
 }
 
