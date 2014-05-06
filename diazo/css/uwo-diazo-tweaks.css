@@ -120,6 +120,7 @@ header {
   border-radius: 10px 0 0 10px;
   border: none;
   padding-left: 16px;
+  color: #444;
 }
 .searchButton {
   background-image: url("img/searchicon.png"), linear-gradient(180deg, #69BAD9, #0077AD) !important;
