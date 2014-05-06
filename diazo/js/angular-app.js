@@ -5,7 +5,7 @@ angular.module('uwoshApp', ['ngSanitize']);
 // CONTROLLERS
 angular.module('uwoshApp')
   .controller('EventsCtrl', ['$scope', '$http', function ($scope,$http) {
-    $http.get('http://pipes.yahoo.com/pipes/pipe.run?_id=2FV68p9G3BGVbc7IdLq02Q&_render=json&feedcount=3&feedurl=http%3A%2F%2Fwww.uwosh.edu%2Ftoday%2Fevents%2Ffeed%2F').success(function(data) {
+    $http.get('https://pipes.yahoo.com/pipes/pipe.run?_id=2FV68p9G3BGVbc7IdLq02Q&_render=json&feedcount=3&feedurl=http%3A%2F%2Fwww.uwosh.edu%2Ftoday%2Fevents%2Ffeed%2F').success(function(data) {
       $scope.events = data.value.items;
     }).error(function() {
       // Some error occurred
